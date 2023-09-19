@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .saler-content .dashboard-saler{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 170px;
+        height: 100%;
+        border-right: 1px solid #b9acac;
+        border-bottom: 1px solid #b9acac;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.25);
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: -8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        width: 130px;
+        height: 35px;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        background: transparent;
+        margin: 5px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border: 2px solid transparent;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .buttons:hover {
+        background: #5A5AF1;
+        border-color: #5A5AF1;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .welcome-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        
+    }
+
+    .status_id {
+        width: 60px;
+        height: 60px;
+        border-top: solid 5px green;
+        border-left: solid 5px rgb(128, 128, 128);
+        border-right: solid 5px rgb(128, 128, 128);
+        border-bottom: solid 5px rgb(128, 128, 128);
+        border-radius: 100%;
+        margin-right: 10px;
+        text-align: center;
+        margin-left: 15%;
+    }
+
+    .welcome {
+        text-align: center;
+        font-size: 24px;
+        padding-left: 3%;
+        font-weight: bold;
+        text-transform: initial;
+    }
+
+    .header {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+
+    .dashboard-saler{
+        display: flex;
+        background-color: #5A5AF1;
+        height: 150px;
+        width: 750px;
+        min-width: 750px;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 18%;
+        margin-top: -30%;
+    }
+
+    .sale-painel-1{
+        width: 33%;
+        height: 100%;
+    }
+
+    .sale-painel-2{
+        width: 33%;
+        height: 100%;
+    }
+
+    .sale-painel-3{
+        width: 33%;
+        height: 100%;
+    }
+
+    .sale-info {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    
+    .saler-content{
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        height: 230px;
+        width: 750px;
+        min-width: 750px;
+        border-radius: 10px;
+        text-align: center;
+        margin: 4%;
+        margin-left: 18%;
+        margin-top: 4%;
+        flex-direction: row;
+        border: 1px solid #b9acac;
+    }
+
+    .total-sales {
+        width: 50%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .dashboard-container{
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        background-image: linear-gradient(#eee .1em, transparent .1em);
+        background-size: 100% 58px;
+    }
+
+    .table {
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        height: 150px;
+        width: 750px;
+        margin-left: 18%;
+        margin-top: 1%;
+        margin-bottom: 15%;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 10px;
+      }
+      
+      th, td {
+        border-left: none;
+        border-right: none;
+      }
+      
+      tr {
+        border-bottom: 1px solid #ccc;
+      }
+      
+      select {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      select:hover {
+        background-color: #f0f0f0;
+      }
+
+      .user-id
+        {
+            width: 25px;
+            height: 25px;
+            border-top: solid 5px green;
+            border-left: solid 5px rgb(128, 128, 128);
+            border-right: solid 5px rgb(128, 128, 128);
+            border-bottom: solid 5px rgb(128, 128, 128);
+            border-radius: 100%;
+            text-align: center;
+            margin-left: 1%;
+      }

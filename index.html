@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="welcome-container">
+            <div class="status_id"> <span class="material-symbols-outlined">face</span></div>
+            <div class="welcome">Good Evening Team!</div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <h1>Omoi</h1>
+            </div>
+            <button class="buttons" type="submit" label="home">
+                <span class="material-symbols-outlined">home</span> Home
+            </button>
+            <button class="buttons" type="submit" label="analytc">
+                <span class="material-symbols-outlined">bar_chart_4_bars</span> Analyct
+            </button>
+            <button class="buttons" type="submit" label="explore">
+                <span class="material-symbols-outlined">explore</span> Explore
+            </button>
+            <button class="buttons" type="submit" label="shop">
+                <span class="material-symbols-outlined">shopping_basket</span> Shop
+            </button>
+            <button class="buttons" type="submit" label="ibox">
+                <span class="material-symbols-outlined">chat</span> Inbox
+            </button>
+            <div class="tools">
+                <h2><span id="tools">Tools</span></h2>
+                <button class="buttons" type="submit" label="shop">
+                    <span class="material-symbols-outlined">settings</span> Setting
+                </button>
+                <button class="buttons" type="submit" label="shop">
+                    <span class="material-symbols-outlined">help</span> Help
+                </button>
+            </div>
+            <div class="projects">
+                <h2><span id="projects">Projects</span></h2>
+                <button class="buttons" type="submit" label="shop">
+                    <span class="material-symbols-outlined">folder</span> Aws
+                </button>
+                <button class="buttons" type="submit" label="shop">
+                    <span class="material-symbols-outlined">folder</span> Google Drive
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="dashboard-saler">
+                <div class="sale-painel-1">
+                    <div class="sale-info">
+                        <p>Receita Mensal</p>
+                        <h1>$3,500 <span id="percent-1">+2.4%</span></h1>
+                        <p>Mês Anterior $1.7k</p>
+                    </div>
+                </div>
+                <div class="sale-painel-2">
+                    <div class="sale-info">
+                        <p>Venda do Mês</p>
+                        <h1>$6,750 <span id="percent-2">+1.4%</span></h1>
+                        <p>Mês Anterior $3.1k</p>
+                    </div>
+                </div>
+                <div class="sale-painel-3">
+                    <div class="sale-info">
+                        <p>Lucro Total</p>
+                        <h1>$10,900 <span id="percent-3">+4.3%</span></h1>
+                        <p>Mês Anterior $8.9k</p>
+                    </div>
+                </div>
+            </div>
+            <div class="saler-content">
+                <div class="total-sales">
+                    <p>Vendas Totais & Custp</p>
+                    <h1>$956,82</h1>
+                </div>
+                <div class="dashboard-container">
+                </div>
+                <div>
+                   <div class="colluns"></div>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Histórico de tansação</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>
+                    <label for="meses">Selecione um mês:</label><br>
+                    <select name="meses" id="meses">
+                        <option value="janeiro">Janeiro</option>
+                        <option value="fevereiro">Fevereiro</option>
+                        <option value="marco">Março</option>
+                        <option value="abril">Abril</option>
+                        <option value="maio">Maio</option>
+                        <option value="junho">Junho</option>
+                        <option value="julho">Julho</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="setembro">Setembro</option>
+                        <option value="outubro">Outubro</option>
+                        <option value="novembro">Novembro</option>
+                        <option value="dezembro">Dezembro</option>
+                    </select>  
+                </tr>
+                <tr>
+                    <td>
+                        <select name="filter-transation" id="filter-transation">
+                        <option value="destinatario">Destinatario</option>
+                        <option value="fornecedor">Fornecedor</option>
+                        <option value="transportadora">Transportadora</option>
+                        <option value="contrato">Contrato</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="filter-product" id="filter-product">
+                        <option value="quantidade">Quantidade</option>
+                        <option value="dataPedido">Data Pedido</option>
+                        <option value="distancia">Distancia</option>
+                        <option value="alterado">Alterado</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="filter-status" id="filter-status">
+                        <option value="entrege">Entregado</option>
+                        <option value="pendente">Pendente</option>
+                        <option value="cancelado">Cancelado</option>
+                        <option value="separacao">Em separação</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Cliente</td>
+                    <td>Status</td>
+                    <td>Data</td>
+                    <td>Fatura</td>
+                    <td>Contrato</td>
+                </tr>
+                <tr>
+                    <td><div>user</div> Femsa Coca Cola </td>
+                    <td><div id="status-sucess"></div>Sucesso</td>
+                    <td>19/09/2023</td>
+                    <td>$ 15.825</td>
+                    <td>2023123</td>
+                </tr>
+                <tr>
+                    <td><div class="user-id">user</div> Intercement Lancare </td>
+                    <td><div id="status-pending"></div>Pendente</td>
+                    <td>02/09/2023</td>
+                    <td>$ 7.478</td>
+                    <td>2023009</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
