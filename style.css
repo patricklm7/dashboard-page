@@ -123,14 +123,26 @@
         height: 100%;
     }
 
+    #percent-1 {
+        font-size: 15px;
+    }
+
     .sale-painel-2{
         width: 33%;
         height: 100%;
     }
 
+    #percent-2 {
+        font-size: 15px;
+    }
+
     .sale-painel-3{
         width: 33%;
         height: 100%;
+    }
+
+    #percent-3 {
+        font-size: 15px;
     }
 
     .sale-info {
@@ -212,7 +224,7 @@
         {
             width: 25px;
             height: 25px;
-            border-top: solid 5px green;
+            border-top: solid 3px rgb(128, 128, 128);
             border-left: solid 5px rgb(128, 128, 128);
             border-right: solid 5px rgb(128, 128, 128);
             border-bottom: solid 5px rgb(128, 128, 128);
