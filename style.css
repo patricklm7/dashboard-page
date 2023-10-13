@@ -4,7 +4,8 @@
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        
     }
 
     .container {
@@ -16,23 +17,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
+
     .menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        max-height: 100vh;
         font-family: Arial, Helvetica, sans-serif;
+        color: #544f5a;
         width: 170px;
         height: 100%;
-        border-right: 1px solid #b9acac;
-        border-bottom: 1px solid #b9acac;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
         border-radius: 4px;
         background: rgba(255, 255, 255, 0.25);
         padding-right: 10px;
         padding-left: 10px;
-        margin-top: -8%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        
     }
 
     .buttons {
@@ -51,8 +59,8 @@
     }
 
     .buttons:hover {
-        background: #5A5AF1;
-        border-color: #5A5AF1;
+        background: #6f42c1;
+        border-color: #6f42c1;
     }
 
     .logo {
@@ -60,16 +68,17 @@
         margin-bottom: 20px;
     }
 
-    .welcome-container {
-        flex: 1;
+    
+    .welcome-contaniner {
         display: flex;
-        align-items: center;
-        padding: 20px;
-        font-family: 'Arial', sans-serif;
-        
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #544f5a;
     }
 
-    .status_id {
+    .status-id {
+        background-image: url(./assets/1.png);
+        background-size: cover;
         width: 60px;
         height: 60px;
         border-top: solid 5px green;
@@ -80,14 +89,18 @@
         margin-right: 10px;
         text-align: center;
         margin-left: 15%;
+        margin-top: 3%;
+        transform: translate(25%);
     }
 
-    .welcome {
-        text-align: center;
-        font-size: 24px;
-        padding-left: 3%;
-        font-weight: bold;
-        text-transform: initial;
+    #welcome-interactive {
+        margin: 3%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
     }
 
     .header {
@@ -108,14 +121,14 @@
 
     .dashboard-saler{
         display: flex;
-        background-color: #5A5AF1;
+        background-color: #6f42c1;
         height: 150px;
         width: 750px;
         min-width: 750px;
         border-radius: 10px;
         text-align: center;
         margin-left: 18%;
-        margin-top: -30%;
+        margin-top: 5%;
     }
 
     .sale-painel-1{
@@ -151,45 +164,105 @@
     }
     
     .saler-content{
-        background-color: white;
         font-family: Arial, Helvetica, sans-serif;
+        color:#544f5a;
         display: flex;
         height: 230px;
         width: 750px;
         min-width: 750px;
         border-radius: 10px;
         text-align: center;
-        margin: 4%;
+        margin-top: 3%;
         margin-left: 18%;
-        margin-top: 4%;
         flex-direction: row;
-        border: 1px solid #b9acac;
+        border: 1px solid #ccc;
     }
 
     .total-sales {
+        background-color: #f0f0f0;
+        border-right: 1px solid #ccc;
         width: 50%;
         height: 100%;
-        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
     }
 
+
     .dashboard-container{
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: row;
         width: 50%;
         height: 100%;
-        background-color: #fff;
-        background-image: linear-gradient(#eee .1em, transparent .1em);
-        background-size: 100% 58px;
+        align-items: flex-end;
+
+
+    }
+
+    #l1 {
+        margin-left: 3%;
+        margin-right: 3%;
+        background-color: #6f42c1;
+        width: 50px;
+        height: 55%;
+    }
+
+    #l2 {
+        margin-right: 3%;
+        background-color: #8561c8;
+        width: 50px;
+        height: 82%;
+    }
+
+    #l3 {
+        margin-right: 3%;
+        background-color: #6f42c1;
+        width: 50px;
+        height: 63%;
+    }
+
+    #l4 {
+        margin-right: 3%;
+        background-color: #8561c8;
+        width: 50px;
+        height: 43%;
+    }
+
+    #l5 {
+        margin-right: 3%;
+        background-color: #6f42c1;
+        width: 50px;
+        height: 75%;
+    }
+
+    #l6 {
+        background-color: #8561c8;
+        width: 50px;
+        height: 88%;
     }
 
     .table {
+        background-color: #f0f0f0;
         text-align: center;
         font-family: 'Arial', sans-serif;
+        color: #544f5a;
         display: flex;
+        flex-direction: column;
         height: 150px;
         width: 750px;
-        margin-left: 18%;
-        margin-top: 1%;
-        margin-bottom: 15%;
+        margin-left: 14%;
+        margin-top: 3%;
+        margin-bottom: 20px;
       }
+
+      .table select{
+      border: solid 5px lightgrey;
+      border-radius: 5px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      width: 150px;
+      height: 40px; 
+    }
       
       table {
         width: 100%;
@@ -197,7 +270,12 @@
       }
       
       th, td {
+        background-color: #f0f0f0;
         padding: 10px;
+      }
+
+      th, h1 {
+        align-items: top;
       }
       
       th, td {
@@ -206,7 +284,7 @@
       }
       
       tr {
-        border-bottom: 1px solid #ccc;
+        border: 1px solid #ccc;
       }
       
       select {
@@ -217,10 +295,11 @@
       }
       
       select:hover {
-        background-color: #f0f0f0;
+        background-color: rgb(111, 66, 193, 0.2);
+        border: 5px solid #6f42c1;
       }
 
-      .user-id
+    .user-id
         {
             width: 25px;
             height: 25px;
@@ -232,3 +311,90 @@
             text-align: center;
             margin-left: 1%;
       }
+
+      .content-shearch {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        max-height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 300px;
+        max-width: 301px;
+        height: 100vh;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.25);
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 12%;
+      }
+
+      .shearch-bar select{
+        border: solid 5px lightgrey;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 295px;
+        height: 40px;
+      }
+
+    select:hover {
+        background-color: rgb(111, 66, 193, 0.2);
+        border: 5px solid #6f42c1;
+      }
+
+    .shearch-bar input {
+        border: solid 5px lightgrey;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 280px;
+        height: 40px;
+
+      }
+
+    input:hover {
+            background-color: rgb(111, 66, 193, 0.2);
+            border: 5px solid #6f42c1;
+        }
+      
+
+
+    .calendar {
+        max-width: 300px;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+    }
+
+    .calendar-header {
+        background-color: #6f42c1;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .calendar-header button {
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .calendar-month {
+        margin: 10px;
+    }
+
+    .calendar-table {
+        color: #544f5a;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 5px;
+        text-align: center;
+    }

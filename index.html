@@ -11,13 +11,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="welcome-container">
-            <div class="status_id"> <span class="material-symbols-outlined">face</span></div>
-            <div class="welcome">Good Evening Team!</div>
-        </div>
-    </header>
-    <div class="container">
+    <div class="menu-container"></div>
+    <div class="container-menu">
         <div class="menu">
             <div class="logo">
                 <h1>Omoi</h1>
@@ -56,118 +51,171 @@
                 </button>
             </div>
         </div>
-        <div class="content">
-            <div class="dashboard-saler">
-                <div class="sale-painel-1">
-                    <div class="sale-info">
-                        <p>Receita Mensal</p>
-                        <h1 id="mouth-revenue">$3,500 <span id="percent-1">+2.4%</span></h1>
-                        <p>Mês Anterior $1.7k</p>
+    </div>
+    <div class="content">
+            <nav>
+                <div class="welcome-contaniner">
+                    <div class="status-id"></div>
+                    <div id="welcome-interactive">
+                        <h1>Good Evening Team !!!</h1>
                     </div>
                 </div>
-                <div class="sale-painel-2">
-                    <div class="sale-info">
-                        <p id="sale-info">Venda do Mês</p>
-                        <h1 id="total-profit">$6,750 <span id="percent-2">+1.4%</span></h1>
-                        <p>Mês Anterior $3.1k</p>
+                <div class="content">
+                    <div class="dashboard-saler">
+                        <div class="sale-painel-1">
+                            <div class="sale-info">
+                                <p>Mouth Revenue</p>
+                                <h1 id="mouth-revenue">$3,500 <span id="percent-1">+2.4%</span></h1>
+                                <p>Previous Mouth $1.7k</p>
+                            </div>
+                        </div>
+                        <div class="sale-painel-2">
+                            <div class="sale-info">
+                                <p id="sale-info">Mouthly Sales</p>
+                                <h1 id="total-profit">$6,750 <span id="percent-2">+1.4%</span></h1>
+                                <p>Previous Mouth $3.1k</p>
+                            </div>
+                        </div>
+                        <div class="sale-painel-3">
+                            <div class="sale-info">
+                                <p>Total Profit</p>
+                                <h1>$10,900 <span id="percent-3">+4.3%</span></h1>
+                                <p>Previsou Mouth $8.9k</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saler-content">
+                        <div class="total-sales">
+                            <h1>Total Sales & Cost</h1>
+                            <h1>$956,82</h1>
+                        </div>
+                        <div class="dashboard-container">
+                            <div id="l1"></div>
+                            <div id="l2"></div>
+                            <div id="l3"></div>
+                            <div id="l4"></div>
+                            <div id="l5"></div>
+                            <div id="l6"></div>
+
+                                
+                        </div>
+                        
+                        
+                        </div>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th><h1>Histórico de tansação</h1></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                <label for="meses">Selecione um mês:</label><br>
+                                <select name="meses" id="meses">
+                                    <option value="janeiro">Janeiro</option>
+                                    <option value="fevereiro">Fevereiro</option>
+                                    <option value="marco">Março</option>
+                                    <option value="abril">Abril</option>
+                                    <option value="maio">Maio</option>
+                                    <option value="junho">Junho</option>
+                                    <option value="julho">Julho</option>
+                                    <option value="agosto">Agosto</option>
+                                    <option value="setembro">Setembro</option>
+                                    <option value="outubro">Outubro</option>
+                                    <option value="novembro">Novembro</option>
+                                    <option value="dezembro">Dezembro</option>
+                                </select>  
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="filter-transation" id="filter-transation">
+                                    <option value="destinatario">Destinatario</option>
+                                    <option value="fornecedor">Fornecedor</option>
+                                    <option value="transportadora">Transportadora</option>
+                                    <option value="contrato">Contrato</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="filter-product" id="filter-product">
+                                    <option value="quantidade">Quantidade</option>
+                                    <option value="dataPedido">Data Pedido</option>
+                                    <option value="distancia">Distancia</option>
+                                    <option value="alterado">Alterado</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="filter-status" id="filter-status">
+                                    <option value="entrege">Entregado</option>
+                                    <option value="pendente">Pendente</option>
+                                    <option value="cancelado">Cancelado</option>
+                                    <option value="separacao">Em separação</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Cliente</td>
+                                <td>Status</td>
+                                <td>Data</td>
+                                <td>Fatura</td>
+                                <td>Contrato</td>
+                            </tr>
+                            <tr>
+                                <td><div></div> Femsa Coca Cola </td>
+                                <td><div id="status-sucess"></div>Sucesso</td>
+                                <td>19/09/2023</td>
+                                <td>$5.825</td>
+                                <td>2023123</td>
+                            </tr>
+                            <tr>
+                                <td> Intercement Lancare </td>
+                                <td><div id="status-pending"></div>Pendente</td>
+                                <td>02/09/2023</td>
+                                <td>$7.478</td>
+                                <td>2023009</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div class="sale-painel-3">
-                    <div class="sale-info">
-                        <p>Lucro Total</p>
-                        <h1>$10,900 <span id="percent-3">+4.3%</span></h1>
-                        <p>Mês Anterior $8.9k</p>
-                    </div>
-                </div>
-            </div>
-            <div class="saler-content">
-                <div class="total-sales">
-                    <p>Vendas Totais & Custp</p>
-                    <h1>$956,82</h1>
-                </div>
-                <div class="dashboard-container">
-                </div>
-                <div>
-                   <div class="colluns"></div>
-                </div>
-            </div>
+                
+            </nav>
         </div>
-        <div class="table">
-            <table>
-                <tr>
-                    <th>Histórico de tansação</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th>
-                    <label for="meses">Selecione um mês:</label><br>
-                    <select name="meses" id="meses">
-                        <option value="janeiro">Janeiro</option>
-                        <option value="fevereiro">Fevereiro</option>
-                        <option value="marco">Março</option>
-                        <option value="abril">Abril</option>
-                        <option value="maio">Maio</option>
-                        <option value="junho">Junho</option>
-                        <option value="julho">Julho</option>
-                        <option value="agosto">Agosto</option>
-                        <option value="setembro">Setembro</option>
-                        <option value="outubro">Outubro</option>
-                        <option value="novembro">Novembro</option>
-                        <option value="dezembro">Dezembro</option>
-                    </select>  
-                </tr>
-                <tr>
-                    <td>
-                        <select name="filter-transation" id="filter-transation">
-                        <option value="destinatario">Destinatario</option>
-                        <option value="fornecedor">Fornecedor</option>
-                        <option value="transportadora">Transportadora</option>
-                        <option value="contrato">Contrato</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="filter-product" id="filter-product">
-                        <option value="quantidade">Quantidade</option>
-                        <option value="dataPedido">Data Pedido</option>
-                        <option value="distancia">Distancia</option>
-                        <option value="alterado">Alterado</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="filter-status" id="filter-status">
-                        <option value="entrege">Entregado</option>
-                        <option value="pendente">Pendente</option>
-                        <option value="cancelado">Cancelado</option>
-                        <option value="separacao">Em separação</option>
-                        </select>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Cliente</td>
-                    <td>Status</td>
-                    <td>Data</td>
-                    <td>Fatura</td>
-                    <td>Contrato</td>
-                </tr>
-                <tr>
-                    <td><div></div> Femsa Coca Cola </td>
-                    <td><div id="status-sucess"></div>Sucesso</td>
-                    <td>19/09/2023</td>
-                    <td>$ 15.825</td>
-                    <td>2023123</td>
-                </tr>
-                <tr>
-                    <td><div class="user-id">user</div> Intercement Lancare </td>
-                    <td><div id="status-pending"></div>Pendente</td>
-                    <td>02/09/2023</td>
-                    <td>$ 7.478</td>
-                    <td>2023009</td>
-                </tr>
-            </table>
+    <div class="content-shearch">
+        <div class="shearch-bar">
+            <select name="filter-user" id="filter-user">
+                <option value="jhonatan">Jhonatan</option>
+                <option value="david">David</option>
+                <option value="mariana">Mariana</option>
+                <option value="matheus">Matheus</option>
+            </select>
+            <input type="text" placeholder="Shearch">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+                    <h2 id="currentMonth">Outubro 2023</h2>
+                    <button id="nextMonth">&gt;</button>
+                </div>
+                <div class="calendar-month">
+                    <table class="calendar-table">
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                        </tr>
+                    </table>
+                    <table id="calendarBody">
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 <script src="script.js"></script>
 </html>
